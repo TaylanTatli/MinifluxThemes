@@ -1,0 +1,267 @@
+:root {
+  /* Catppuccin Colors */
+  --rosewater: #f5e0dc;
+  --flamingo: #f2cdcd;
+  --pink: #f5c2e7;
+  --mauve: #cba6f7;
+  --red: #f38ba8;
+  --maroon: #eba0ac;
+  --peach: #fab387;
+  --yellow: #f9e2af;
+  --green: #a6e3a1;
+  --teal: #94e2d5;
+  --sky: #89dceb;
+  --sapphire: #74c7ec;
+  --blue: #89b4fa;
+  --lavender: #b4befe;
+  --text: #cdd6f4;
+  --subtext1: #bac2de;
+  --subtext0: #a6adc8;
+  --overlay2: #9399b2;
+  --overlay1: #7f849c;
+  --overlay0: #6c7086;
+  --surface2: #585b70;
+  --surface1: #45475a;
+  --surface0: #313244;
+  --crust: #11111b;
+  --mantle: #181825;
+  --base: #1e1e2e;
+
+  /* Miniflux Variables */
+  --font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --entry-content-font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+
+  --body-color: var(--text);
+  --body-background: var(--base);
+
+  --category-color: var(--flamingo);
+  --category-background-color: var(--surface1);
+  --category-border-color: var(--surface2);
+  --category-link-color: var(--peach);
+  --category-link-hover-color: var(--yellow);
+
+  --alert-info-color: var(--text);
+  --alert-info-background-color: var(--surface1);
+  --alert-info-border-color: var(--surface2);
+
+  --item-border-color: var(--surface1);
+  --item-padding: 1rem;
+  --item-title-link-font-weight: 500;
+  --item-meta-focus-color: var(--subtext1);
+
+  --item-status-read-title-link-color: var(--flamingo);
+
+  --header-active-link-color: var(--red);
+
+  --feed-has-unread-background-color: var(--mantle);
+  --feed-has-unread-border-color: var(--surface0);
+
+  --category-has-unread-background-color: var(--mantle);
+  --category-has-unread-border-color: var(--surface0);
+
+  --input-border: 1px solid var(--surface2);
+  --input-background: var(--surface1);
+  --input-color: var(--text);
+
+  --button-primary-border-color: var(--surface1);
+  --button-primary-background: var(--surface0);
+  --button-primary-color: var(--red);
+  --button-primary-focus-border-color: var(--surface2);
+  --button-primary-focus-background: var(--surface1);
+
+  --panel-background: var(--surface0);
+  --panel-border-color: var(--surface1);
+  --panel-color: var(--text);
+
+  --link-color: var(--lavender);
+  --link-focus-color: var(--mauve);
+  --link-hover-color: var(--mauve);
+
+  --title-color: var(--peach);
+
+  --counter-color: var(--subtext1);
+
+  --table-border-color: var(--surface1);
+  --table-th-background: var(--surface0);
+  --table-th-color: var(--text);
+  --table-tr-hover-background-color: var(--surface0);
+  --table-tr-hover-color: var(--text);
+
+  --logo-color: var(--rosewater);
+  --logo-hover-color-span: var(--rosewater);
+
+  --header-list-border-color: var(--surface1);
+  --header-link-color: var(--text);
+  --header-link-focus-color: var(--blue);
+  --header-link-hover-color: var(--blue);
+
+  --pagination-link-color: var(--rosewater);
+  --pagination-border-color: var(--surface1);
+
+  --entry-header-border-color: var(--surface1);
+  --entry-header-title-link-color: var(--peach);
+
+  --entry-content-color: var(--text);
+  --entry-content-code-color: var(--text);
+  --entry-content-code-background: var(--surface0);
+  --entry-content-code-border-color: var(--surface1);
+  --entry-content-quote-color: var(--text);
+  --entry-content-abbr-border-color: var(--surface1);
+  --entry-enclosure-border-color: var(--surface1);
+
+  --alert-color: var(--text);
+  --alert-background-color: var(--surface0);
+  --alert-border-color: var(--surface1);
+  --alert-success-color: var(--mantle);
+  --alert-success-background-color: var(--green);
+  --alert-success-border-color: var(--surface1);
+  --alert-error-color: var(--mantle);
+  --alert-error-background-color: var(--red);
+  --alert-error-border-color: var(--surface1);
+
+  /* Custom Variables */
+  --border-radius: .25rem;
+}
+
+html {
+  color-scheme: dark;
+}
+.item {
+  background-color: var(--surface0);
+  border-style: solid;
+  border-radius: var(--border-radius);
+}
+
+.item-title a {
+  color: var(--red);
+}
+
+.item-meta a {
+  color: var(--green);
+  font-weight: 600;
+}
+
+.item-meta-icons li > :is(a, button) {
+  color: var(--flamingo)
+}
+
+.item-meta :is(a:is(:focus, :hover),
+button:is(:focus, :hover)) {
+  color: var(--maroon)
+}
+
+.item-status-read a {
+  font-weight: 400;
+}
+
+.disabled {
+  opacity: 40%;
+}
+
+input[type=search],
+input[type=url],
+input[type=password],
+input[type=text],
+input[type=number],
+.button,
+textarea {
+  border-radius: var(--border-radius);
+  border-style: solid;
+}
+
+fieldset {
+  border: var(--input-border);
+  border-radius: var(--border-radius);
+}
+
+select {
+  background-color: var(--surface0);
+  border-style: solid;
+  border-radius: var(--border-radius);
+  border-collapse: collapse;
+}
+select:focus:active {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.form-section {
+  border-left: var(--input-border);
+  border-width: 4px;
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  padding: 1rem 0 0 1rem;
+  margin-left: 17px;
+  background: var(--surface0);
+}
+.form-section .buttons {
+  display: inline-block;
+}
+.logo a {
+  font-weight: 900;
+}
+.logo a span {
+  color: var(--blue)
+}
+
+.header li a:hover {
+  color: var(--header-link-hover-color);
+}
+
+.entry header h1 a:hover,
+.entry header h1 a:focus {
+  color: var(--flamingo);
+}
+
+.entry header {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.entry-meta,
+.entry-website a,
+.entry-date {
+  color: var(--subtext0);
+}
+
+.entry-content {
+  line-height: 1.5em;
+}
+
+.entry-content h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.entry-content pre,
+.entry-content code {
+  border-radius: var(--border-radius);
+}
+.entry-content code {
+  padding: 0.25rem;
+}
+
+.entry-content blockquote {
+  border-left: var(--input-border);
+  border-width: 4px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.entry-content figure img {
+  border: var(--input-border);
+  border-radius: var(--border-radius);
+}
+.entry-content iframe,
+.entry-content video,
+.entry-content img {
+  width: 100%;
+}
+
+.pagination-entry-bottom {
+  padding-top: 15px;
+}
