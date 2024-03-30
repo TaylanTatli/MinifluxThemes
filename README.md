@@ -1,12 +1,12 @@
 # Miniflux Custom CSS Themes
-Here is the collection of themes that I created for Miniflux. Just Select the correct theme (dark / light) and paste the content of CSS file to Custom CSS area in settings.
+Here is the collection of themes that I created for Miniflux. Just select the correct theme (dark / light) and paste the content of CSS file to Custom CSS area in settings.
 
 ## Catppuccin Theme (Dark Theme)
 
 I used Mocha version for theme.
 
-Created: 31.03.2024
-Updated: No.
+**Created**: 31.03.2024  
+**Updated**: No.
 
 <div align="center">
   <img src="/assets/CatppuccinListView.png" width="412px" alt="Catppuccin List View" /> 
@@ -17,8 +17,8 @@ Updated: No.
 
 This one is very old. Originally published as a gist. I thought it would be better to collect them all in a same place.
 
-Created: 15.03.2021
-Updated: No. 
+**Created**: 15.03.2021  
+**Updated**: No. 
 
 <div align="center">
   <img src="/assets/OneDarkListView.png" width="412px" alt="OneDark List View" /> 
