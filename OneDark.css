@@ -31,10 +31,12 @@ input[type="search"],
 input[type="url"],
 input[type="password"],
 input[type="text"],
-input[type="number"] {
+input[type="number"],
+textarea {
   padding: .25em .5em;
   box-shadow: none;
   border-radius: 6px;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .entry header h1 {
