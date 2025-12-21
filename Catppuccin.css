@@ -123,6 +123,11 @@
   --border-radius: .25rem;
 }
 
+:root {
+  /* CJK text spacing */
+  text-autospace: normal;
+}
+
 html {
   color-scheme: dark;
 }
