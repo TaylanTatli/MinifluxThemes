@@ -23,6 +23,11 @@
   --entry-content-quote-font-family: var(--entry-content-font-family)
 }
 
+:root {
+  /* CJK text spacing */
+  text-autospace: normal;
+}
+
 *:focus {
   outline: 0 !important;
 }
